@@ -21,12 +21,13 @@ int main(void)
 														putchar(k + '0');
 
 																if (i < 99)
-																			{
+	lla															{
 																							putchar(44);
-																										putchar(32);
-																												}
-																	}
-				putchar('\n');
 
-					return (0);
+							    								putchar(32);
+
+}
+putchar('\n');
+
+return (0);
 }  
