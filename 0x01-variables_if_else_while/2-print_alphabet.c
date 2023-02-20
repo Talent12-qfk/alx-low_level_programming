@@ -1,20 +1,17 @@
 #include <stdio.h>
 /**
- * main - Entry point
- * Description: prints program in lowercase, and adds a new line
- * -uses putchar
- * Return: 0 (Always) Successful
+ * main - prints the alphabet in lowercase,
+ * followed by a new line
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-char c = 'a';
+	char ch;
 
-while (c <= 'z')
-{
-						putchar(c);
-						c++;
+	for (ch = 'a'; ch <= 'z'; ch++)
+	{
+		putchar(ch);
+	}
+	putchar('\n');
+	return (0);
 }
-putchar('\n');
-
-return (0);
-} 
