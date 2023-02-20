@@ -1,20 +1,17 @@
- #include <stdio.h>
+#include <stdio.h>
 /**
- *  * main - Entry point
- *   * Description: Print all single digit numbers of base 10, starting from 0
- *    * You are not allowed to use any of type char, instead use putchar function, and only twice
- *     * Return: 0 if successful (Always) non zero otherwise
- *      */
+ * main - prints all single digit numbers of base 10 starting from 0,
+ * followed by a new line, using putchar
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-int i;
+	int n;
 
-for (i = 0; i < 10; i++)
-					{
-								putchar(i + '0');
-
+	for (n = 48; n < 58; n++)
+	{
+		putchar(n);
+	}
+	putchar('\n');
+	return (0);
 }
-putchar('\n');
-
-return (0);
-} 
