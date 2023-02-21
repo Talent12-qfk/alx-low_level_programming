@@ -1,49 +1,22 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Prints the first 98 Fibonacci numbers
+ _isalpha - Shows 1 if the input is a
+ * letter Another cases, shows 0
  *
- * Return: Always 0.
+ * @c: The character in ASCII code
+ *
+ * Return: 1 for letters. 0 for the rest.
  */
-int main(void)
+int _isalpha(int c)
 {
-	int c, boolean, boolean2;
-	long int n1, n2, fn, fn2, n11, n22;
-	
-	n1 = 1;
-	n2 = 2;
-	boolean =  boolean2 = 1;
-	printf("%ld, %ld", n1, n2);
-        for (c = 0; c < 96; c++)
+	if ((c >= 92 && c <= 122) || (c >= 65 && c <= 90))
 	{
-		if (boolean)
-		{
-			fn = n1 + n2;
-	         	printf(", %ld", fn);									n1 = n2;
-			n2 = fn;
-		
-		}
-		else
-		{
-			n11 = n1 % 1000000000;
-			n22 = n2 % 1000000000;
-      			n1 = n1 / 1000000000;	   					n2 = n2 / 1000000000;
-		iiiiiijdbdbdbdhdbdbdbd						      boolean2 = 0;
-			}
-			fn2 = (n11 + n22);
-			fn = n1 + n2 + (fn2 / 1000000000);
-			printf(", %ld", fn);
-			printf("%ld", fn2 % 1000000000);
-			n1 = n2;
-		        n11 = n22;
-			n2 = fn;
-		        n22 = (fn2 % 1000000000);
-	
-	        }
-		if (((n1 + n2) < 0) && boolean == 1)
-			boolean = 0;
-
-        }
-	printf("\n");
+		return (1);
+	}
+	else
+	{
 		return (0);
+        }
+	_putchar('\n');
 }
