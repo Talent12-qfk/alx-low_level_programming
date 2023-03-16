@@ -3,33 +3,20 @@
 #include <stdlib.h>
 
 /**
- * print_tab - Prints an array of string
- * @tab: The array to print
- *
- * Return: nothing
- */
-void print_tab(char **tab)
-{
-int i;
-for (i = 0; tab[i] != NULL; ++i)
-{
-printf("%s\n", tab[i]);
-}
-}
-/**
  * main - check the code for ALX School students.
  *
- * Return: 1 if an error occurred, 0 otherwise
+ * Return: Always 0.
  */
-int main(void)
+int main(int ac, char *av[])
 {
-char **tab;
-tab = strtow("        ALX School                  #cisfun ");
-if (tab == NULL)
+char *s;
+
+s = argstostr(ac, av);
+if (s == NULL)
 {
-printf("Failed\n");
 return (1);
 }
-print_tab(tab);
+printf("%s", s);
+free(s);
 return (0);
 }
